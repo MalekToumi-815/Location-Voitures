@@ -15,7 +15,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $check->store_result();
 
     if ($check->num_rows > 0) {
-        echo "❌ Cet email est déjà enregistré.";
+        echo "<script>
+                window.location.href = '../login.html'; // Redirige vers la page de connexion
+                alert('❌ Cet email est déjà enregistré.');
+              </script>";
         exit;
     }
 
@@ -24,7 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->bind_param("ssss", $nom, $email, $mot_de_passe, $telephone);
 
     if ($stmt->execute()) {
-        echo "✅ Inscription réussie. <a href='../login.html'>Se connecter</a>";
+        // Rediriger vers login.html après une inscription réussie, avec une alerte JavaScript
+        echo "<script>
+                alert('✅ Inscription réussie!');
+                window.location.href = '../login.html'; // Redirige vers la page de connexion
+              </script>";
+        exit; // Arrêter l'exécution du script après la redirection
     } else {
         echo "❌ Erreur lors de l'inscription : " . $stmt->error;
     }
