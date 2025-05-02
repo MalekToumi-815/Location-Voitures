@@ -1,4 +1,11 @@
 /* Dégradé de fond du bleu vers le noir pour la partie supérieure */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Georgia", "Times New Roman", serif;
+}
 body {
     font-family: 'Georgia', serif; /* Elegant font */
     background: linear-gradient(to bottom, #14213D, #000000);
@@ -7,17 +14,15 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    transition: background 0.3s ease-in-out;
+    height: 100%;
+    width: 100%;
 }
 
 header {
-    background: linear-gradient(to bottom, #14213D, #000000);
     color: #ffffff;
     padding: 50px 20px;
     text-align: center;
     position: relative;
-    transition: background 0.3s ease-in-out;
 }
 
 header .overlay {
@@ -95,7 +100,7 @@ main {
     transform: scale(1.1);
 }
 
-.car-list {
+#vehicule-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -133,7 +138,7 @@ main {
     transition: opacity 0.3s ease-in-out;
 }
 
-.car-details h4 {
+.car-details h3 {
     font-size: 1.5rem;
     color: #333;
     transition: color 0.3s ease;
@@ -143,21 +148,6 @@ main {
     color: #555;
 }
 
-.btn-rent {
-    padding: 10px 20px;
-    background-color: #FCA311;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-rent:hover {
-    background-color: #D38B00;
-    transform: scale(1.1);
-}
 
 footer {
     text-align: center;

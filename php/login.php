@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             echo "<script>
                     alert('✅ Connexion réussie. Bienvenue, " . htmlspecialchars($user['nom']) . "!');
+                    window.location.href = '../louer.html';
                   </script>";
         } else {
             echo "<script>

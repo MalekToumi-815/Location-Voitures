@@ -1,7 +1,7 @@
 <?php
 require_once 'db.php';
 
-$sql = "SELECT * FROM vehicules WHERE disponible = 1";
+$sql = "SELECT * FROM vehicules join utilisateurs on utilisateur_id = utilisateurs.id WHERE disponible = 1 ;";
 $result = mysqli_query($conn, $sql);
 
 if (!$result) {
@@ -15,7 +15,7 @@ if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $vehicules[] = $row;
     }
-}
+}   
 
 header('Content-Type: application/json');
 echo json_encode($vehicules);

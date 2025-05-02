@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db = 'location_voiture';
 $user = 'root';
-$pass = 'malek'; // ou ton mot de passe MySQL
+$pass = 'malik123'; // ou ton mot de passe MySQL
 
 $conn = new mysqli($host, $user, $pass, $db);
 
