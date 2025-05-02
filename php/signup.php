@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "<script>
                 window.location.href = '../login.html'; // Redirige vers la page de connexion
                 alert('❌ Cet email est déjà enregistré.');
-              </script>";
+                </script>";
         exit;
     }
 
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "<script>
                 alert('✅ Inscription réussie!');
                 window.location.href = '../login.html'; // Redirige vers la page de connexion
-              </script>";
+                </script>";
         exit; // Arrêter l'exécution du script après la redirection
     } else {
         echo "❌ Erreur lors de l'inscription : " . $stmt->error;
