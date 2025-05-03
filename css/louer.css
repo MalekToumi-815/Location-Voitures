@@ -7,7 +7,6 @@ html, body {
     font-family: "Georgia", "Times New Roman", serif;
 }
 body {
-    font-family: 'Georgia', serif; /* Elegant font */
     background: linear-gradient(to bottom, #14213D, #000000);
     color: #E5E5E5;
     margin: 0;

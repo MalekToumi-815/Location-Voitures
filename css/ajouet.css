@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #14213D 0%, #000000 100%);
+    color: #E5E5E5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    color: #FCA311;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-container {
+    background: rgba(20, 33, 61, 0.95);
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(252, 163, 17, 0.15);
+}
+
+form h2 {
+    color: #FCA311;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #2c3b5a;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #FCA311;
+    box-shadow: 0 0 0 3px rgba(252, 163, 17, 0.2);
+}
+
+input[type="file"] {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background: #FCA311;
+    color: #000000;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background: #e59400;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(252, 163, 17, 0.3);
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: auto;
+}
