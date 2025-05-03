@@ -96,7 +96,7 @@ main {
     transform: scale(1.1);
 }
 
-#vehicule-list {
+#vehicule-list, #vehicule-list-personel {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
