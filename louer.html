@@ -6,22 +6,29 @@
     <title>Location de Voiture</title>
     <link rel="stylesheet" href="css/louer.css">
     <script src="js/main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <!-- doit etre supprimer apres le test -->
-        <a href="ajouter_voiture.html">ajouter test</a>
-        <a href="mes_voitures.html">mes voitures test</a>
+        <nav>
+            <h1>Double Malek Location Voiture</h1>
+            <div id="lien">
+                <a href="louer.html">Louer Voitures</a>
+                <a href="ajouter_voiture.html">Publier Voiture</a>
+                <a href="mes_voitures.html">Mes Publications</a>
+                <a href="php/deconnexion.php"><img src="src/logout.png" alt="logout"></a>
+            </div>
+        </nav>
         <section class="search-container">
-            <h2>Trouver une voiture</h2>
-            <form action="" method="GET">
-                <div class="search-inputs">
-                    <input type="text" placeholder="Marque" name="marque" class="search-field">
-                    <input type="text" placeholder="Modèle" name="modele" class="search-field">
-                    <input type="number" placeholder="Prix Max" name="prix_max" class="search-field">
-                    <button type="submit" class="search-button">Rechercher</button>
-                </div>
-            </form>
+            <h2>Trouver une voiture</h2>          
+            <div class="search-inputs">
+                <input type="text" placeholder="Marque" name="marque" class="search-field">
+                <input type="text" placeholder="Modèle" name="modele" class="search-field">
+                <input type="number" placeholder="Prix Max" name="prix_max" class="search-field">
+                <button class="search-button">Rechercher</button>
+            </div>
         </section>
 
         <section id="vehicule-list">

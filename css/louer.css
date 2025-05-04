@@ -156,3 +156,34 @@ footer {
 h3{
     text-align: center;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 6px;
+}
+a{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #FCA311;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+a img{
+    height: 30px;
+}
+#lien{
+    display: flex;
+    align-items: center;
+}
+a:hover{
+    transform: translateY(-3px);
+}
+h1{
+    color: #F8F9FA;
+    font-weight: 600;
+    font-size: 2rem;
+}
