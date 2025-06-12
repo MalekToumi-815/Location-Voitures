@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $db = 'location_voiture';
-$user = 'root';
-$pass = 'malik123'; // ou ton mot de passe MySQL
+$user = 'user';
+$pass = 'password'; // ajouter votre username et password de MySQL
 
 $conn = new mysqli($host, $user, $pass, $db);
 
